@@ -159,3 +159,4 @@ function(t,e){if(r[e]!==o)return s=!i||e,!1}),s}function l(t){return h(t,!0)}!fu
 $("#go-cart,#next_order").click(function() { startcountdown() }); function startcountdown() { setTimeout(()=>{ $(".addtowish").removeClass("aktif") } , 1000) } ; $(".cart-wish").click(function() { if ($(".blanter-cart").css("display") == "block") { $(".cartshadow").removeClass("aktif"); } else { $(".cartshadow").addClass("aktif"); } });
 $(".cartshadow").click(function() { if ($(".blanter-cart").css("display") == "block") { $(".cartshadow").removeClass("aktif"); $(".blanter-cart").slideToggle("fast"); } });
 $('#go-cart, #next_order').click(function() { if (this.id == 'go-cart' || this.id == 'next_order') { if ($("#pilihan-1").length) { if ($('#pilihan-1')[0].selectedIndex <= 0) { $('.notselected').addClass('aktif'); setTimeout(()=>{ $('.notselected').removeClass('aktif') } , 1000); } } } });
+function removecart(){$("#duniablanter-cart").remove()};
